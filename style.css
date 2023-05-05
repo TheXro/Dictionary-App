@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body{
+    background-color:#10182F;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    padding: 20px;
+    background-color: rgb(152, 60, 244);
+    border-radius: 10px;
+}
+#searchSection{
+    text-align: center;
+    position: relative;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+input{
+    width: 80%;
+    padding: 10px 42px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.searchWord{
+    position: relative;
+}
+.fa-search{
+    position: absolute;
+    top: 50%;
+    transform:translateY(50%);
+    left: 60px;
+
+}
+.content{
+    padding: 20px;
+    background-color: rgb(152, 60, 244);
+    border-radius: 10px;
+}
