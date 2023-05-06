@@ -21,12 +21,10 @@ body {
   padding: 20px;
   background-color:rgb(178, 183, 191);
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-  min-width: 60%;
+  width: 55%;
 }
 .searchSection {
   text-align: center;
-  position: relative;
 }
 h1 {
   font-size: 40px;
@@ -47,6 +45,7 @@ input {
   background-size: 25px;
   background-position: left;
   background-position-x: 1%;
+  position: relative;
 
 }
 
@@ -59,6 +58,8 @@ input:focus{
   /* font-size: 15px; */
   color: rgb(0, 0, 0);
   opacity: .5;
+  font-style: italic;
+  /* word-wrap: break-word; */
 }
 
 li{
@@ -73,15 +74,21 @@ li:last-child{
 .word .details p{
     font-size: 25px;
     font-weight: 500;
+    opacity: 1;
+    font-style: normal;
 }
 p{
-    font-size: 22px;
+    font-size: 15px;
+    color: #000;
+    font-style: italic;
+    opacity: .5;
 }
 .word .details span{
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     color: #000;
     opacity: .4;
+    font-style: italic;
 }
 .fa-volume-up{
     float: right;
@@ -106,6 +113,35 @@ p{
     padding: 0;
     margin: 0;
 }
+ul{
+  height: 0;
+  overflow: hidden;
+  transition: all .6s ease;
+}
+.sea{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.clear{
+  position: absolute;
+  font-size:20px;
+  top: 25%;
+  right: 3%;
+  font-size: large;
+  cursor: pointer;
+  opacity: .5;
+}
+.clear:hover{
+  opacity: 1;
+}
+.clear:active{
+  opacity: .4;
+}
+.active{
+  height: 350px ;
+  transition: all .8s ease;
+}
 
 
 @media screen and (max-width: 760px) {
@@ -129,13 +165,6 @@ p{
   .word .details p{
     font-size: 23px;
   }
-  /* .fa-search {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
-    left: 15px;
-    opacity: 0.5;
-  } */
   .details{
     padding-left: 5px;
     border-left: solid 3px #7070d6;
