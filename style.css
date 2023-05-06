@@ -116,7 +116,7 @@ p{
 }
 ul{
   height: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: all .6s ease;
 }
 .sea{
