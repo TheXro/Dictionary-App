@@ -22,6 +22,7 @@ body {
   background-color:rgb(178, 183, 191);
   border-radius: 10px;
   width: 55%;
+  overflow:scroll;
 }
 .searchSection {
   text-align: center;
